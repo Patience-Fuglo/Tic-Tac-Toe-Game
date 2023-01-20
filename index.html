@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Tic Tac Toe</h1>
+        <table>
+            <tr>
+                <td id="r1c1" onclick="cellClicked(this)"></td>
+                <td id="r1c2" onclick="cellClicked(this)"></td>
+                <td id="r1c3" onclick="cellClicked(this)"></td>
+            </tr>
+            <tr>
+                <td id="r2c1" onclick="cellClicked(this)"></td>
+                <td id="r2c2" onclick="cellClicked(this)"></td>
+                <td id="r2c3" onclick="cellClicked(this)"></td>
+            </tr>
+            <tr>
+                <td id="r3c1" onclick="cellClicked(this)"></td>
+                <td id="r3c2" onclick="cellClicked(this)"></td>
+                <td id="r3c3" onclick="cellClicked(this)"></td>
+            </tr>
+        </table>
+        <br>
+      <div class='wrapper'>
+        <button onclick="reset()">Reset</button>
+    </body>
+</html>

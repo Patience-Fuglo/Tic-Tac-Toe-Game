@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+html {
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+body {
+  color: #4B4DEB;
+  font-size: 25px;
+  
+
+}
+table {
+    margin: 0 auto;
+
+  transition: background-color .5s;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;:
+}   
+
+td {
+    width: 120px;
+    height: 120px;
+    border: 11px solid pink;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: #DFF3E3;
+    transition: background-color .5s;  
+    text-align: center:
+}
+
+td:hover {
+  background-color: rgba(0,0,0,0);
+  transition: background-color .5s;
+  cursor: pointer;
+}
+button {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: tomato;
+  background-color: white;
+  border: 1px solid tomato;
+  padding: 15px;
+  transition: border, color, .5s;
+  border: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #33DBFF;
+  border: 5px solid pink;
+  transition: border, color, .5s;
+}
+
+.reset:focus {
+  outline: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
