@@ -4,9 +4,12 @@ var win = false;
 var count = 0;
 
 
+
 //function to check if there is a tie
 function checkTie() {
     if (count == 9 && win == false) {
+        let audio = document.getElementById("failureAudio");
+        audio.play();
         alert("Tie!");
         reset();
     }
@@ -75,6 +78,8 @@ function changeColor() {
 
 //function to check status of the game
 function cellClicked(cell) {
+    let audio = document.getElementById("defaultAudio");
+    audio.play();
   if (cell.innerHTML == "") {
       cell.innerHTML = turn;
       count++;
@@ -83,7 +88,6 @@ function cellClicked(cell) {
       changeTurn();
   }
 }
-
 
 
 //function to check if there is a winner
@@ -160,3 +164,4 @@ function reset() {
   turn = "X";
   win = false;
 }
+
