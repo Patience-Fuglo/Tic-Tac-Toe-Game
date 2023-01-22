@@ -75,7 +75,7 @@ function changeColor() {
       }
   }
 }
-
+//Audio Added
 //function to check status of the game
 function cellClicked(cell) {
     let audio = document.getElementById("defaultAudio");
@@ -149,6 +149,8 @@ function checkWinner() {
 
   }
   if (win) {
+    let audio = document.getElementById("winAudio");
+  audio.play();
       alert("Player " + turn + " wins!");
       reset();
   }
