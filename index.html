@@ -1,12 +1,13 @@
 <html>
     <head>
-        <title>Tic Tac Toe</title>
         <link rel="stylesheet" href="style.css">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="script.js"></script>
+       <script src="script.js"></script>
     </head>
     <body>
-        <h1>Tic Tac Toe</h1>
+      <div class="title">TIC TAC TOE</div><br><br><br>
+      <br>
+      <br>
         <table>
             <tr>
                 <td id="r1c1" onclick="cellClicked(this)"></td>
@@ -28,12 +29,12 @@
             <audio id="failureAudio" onclick="playAudio()">
                 <source src="failure3.mp3" type="audio/mpeg">
                 <audio id="winAudio" onclick="playAudio()">
-                  <source src="startGame.mp3" type="audio/mpeg">
-                  <audio id="defaultAudio" onclick="playAudio()">
-                    <source src="goal2.mp3" type="audio/mpeg">
+                  <source src="startGame.mp3" type="audio/mpeg"> 
         </table>
-        <br>
-      <div class='wrapper'>
         <button onclick="reset()">Reset</button>
+        <h1>Score Card</h1>
+       <div id="x_score">Player X</div>
+       <div id="o_score">Player O</div>
+      
     </body>
 </html>

@@ -3,6 +3,11 @@ var turn = "X";
 var win = false;
 var count = 0;
 
+// Declare variable to keep scores
+let scoreKeeper = {
+    X: 0,
+    O: 0
+}
 
 
 //function to check if there is a tie
@@ -14,6 +19,18 @@ function checkTie() {
         reset();
     }
 }
+
+//funtion to play sound when there is no winner
+function checkTie() {
+    if (count == 9 && win == false) {
+        let audio = document.getElementById("failureAudio");
+        audio.play();
+        alert("Tie!");
+        reset();
+    }
+}
+
+
 
 
   //function to change the turn
@@ -150,8 +167,16 @@ function checkWinner() {
   }
   if (win) {
     let audio = document.getElementById("winAudio");
-  audio.play();
+    audio.play();
       alert("Player " + turn + " wins!");
+      
+      // Update scorekeeper with the new win
+      scoreKeeper[turn] = scoreKeeper[turn] + 1;
+      //update UI
+      let x_score = document.getElementById("x_score");
+      let o_score = document.getElementById("o_score");
+      x_score.innerHTML = `Player X: ${scoreKeeper["X"]}`;
+      o_score.innerHTML = `Player O: ${scoreKeeper["O"]}`;
       reset();
   }
 }
@@ -166,4 +191,5 @@ function reset() {
   turn = "X";
   win = false;
 }
+
 
