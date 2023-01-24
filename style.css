@@ -3,19 +3,24 @@
    html {
        font-family: 'Montserrat', sans-serif;
        text-align: center;
+       margin-top: 3em;
+       text-align:center; 
+       width:100%;
    }
    
+
    body {
      color: #4B4DEB;
      font-size: 45px;
      font-weight: bold;
+    
     
    }
    table {
        margin: 0 auto;
        border-collapse: collapse;
        transition: background-color .5s;  
-       text-align: center;;
+       text-align: center;
        justify-content: center;
        align-items: center;
        border-collapse: separate;
@@ -35,19 +40,14 @@
        align-items: center;
        border-radius: 4px;
        box-shadow: rgba(0, 0, 0, 0.3) 0px 17px 50px;
+      
    }
 
    td:hover {
      background-color: rgba(0,0,0,0);
      transition: background-color .5s;
-     cursor: pointer;
      color: #33DBFF;
-     transition: border, color, .5s;  
-   }
-   
-   td:hover {
      cursor: pointer;
-     color: #33DBFF;
      border: 5px solid pink;
      transition: border, color, .5s;
    }
@@ -75,12 +75,19 @@
      outline: none;
    }
    
-   h1{
+  h1{
     font-size: 25px;
     color:#4B4DEB ;
     font-family: 'Montserrat', sans-serif;
-    margin-top:0.3em;
-    margin-bottom:0.3em;
+    margin-top:20px;
+    margin-left: 35em;
+    position: absolute;
+    top: 2.5em;
+    left: 870;
+    width: 100%;
+    margin: 0;
+    display:table-cell;
+    width:50%;
   }
   
   #o_score{
@@ -90,14 +97,29 @@
     color: tomato;
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
+    margin-left: 41em;
+    position: absolute;
+    top: 5.3em;
+    left: 497;
+    width: 100%;
+    margin: 0;
+
   }
   
   #x_score{
     text-align: center;
     font-size: 20px;  
     font-family: 'Shift', sans-serif;
-    padding-top:20px;
+    padding-top:10px;
     padding-bottom:5px;
       color: tomato;
+      margin-left: 42em;
+      position: absolute;
+      top: 6.7em;
+      left: 497;
+      width: 100%;
+      margin: 0;
+  
+
   }
   
