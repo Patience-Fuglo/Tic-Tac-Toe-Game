@@ -2,18 +2,17 @@
 
    html {
        font-family: 'Montserrat', sans-serif;
-       text-align: center;
-       margin-top: 3em;
+       text-align: center;  
+       margin-top: 3.7em;
        width:100%;
    }
    
-
    body {
      color: #4B4DEB;
-     font-size: 45px;
+     font-size: 40px;
      font-weight: bold;
-    
-    
+
+ 
    }
    table {
        margin: 0 auto;
@@ -24,12 +23,12 @@
        align-items: center;
        border-collapse: separate;
        border-spacing: 10px;
-       margin-top:-14em; 
+       margin-top: 2em;
    }   
    
    td {
        width: 120px;
-       height: 120px;
+       height: 98px;
        border: 11px solid pink;
        font-size: 50px;
        cursor: pointer;
@@ -74,6 +73,24 @@
      outline: none;
    }
    
+   .title{
+    font-size: 45px;
+    color:#4B4DEB ;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:1em;
+    margin-left: 35em;
+    position: absolute;
+    top: 0.1em;
+    left: 8.0em;
+    width: 100%;
+    margin: 0;
+    display:table-cell;
+    width:50%;
+    margin-top: 1em
+  }
+
+
+
   h1{
     font-size: 25px;
     color:#4B4DEB ;
@@ -82,7 +99,7 @@
     margin-left: 35em;
     position: absolute;
     top: 2.5em;
-    left: 800;
+    left: 33em;
     width: 100%;
     margin: 0;
     display:table-cell;
@@ -99,7 +116,7 @@
     margin-left: 41em;
     position: absolute;
     top: 5.3em;
-    left: 467;
+    left: 23em;
     width: 100%;
     margin: 0;
   }
@@ -114,7 +131,7 @@
       margin-left: 42em;
       position: absolute;
       top: 6.7em;
-      left: 467;
+      left: 23em;
       width: 100%;
       margin: 0;
   }
