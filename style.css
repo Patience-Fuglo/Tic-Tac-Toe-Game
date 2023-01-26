@@ -4,7 +4,6 @@
        font-family: 'Montserrat', sans-serif;
        text-align: center;
        margin-top: 3em;
-       text-align:center; 
        width:100%;
    }
    
@@ -83,7 +82,7 @@
     margin-left: 35em;
     position: absolute;
     top: 2.5em;
-    left: 870;
+    left: 800;
     width: 100%;
     margin: 0;
     display:table-cell;
@@ -100,26 +99,23 @@
     margin-left: 41em;
     position: absolute;
     top: 5.3em;
-    left: 497;
+    left: 467;
     width: 100%;
     margin: 0;
-
   }
   
   #x_score{
-    text-align: center;
-    font-size: 20px;  
-    font-family: 'Shift', sans-serif;
-    padding-top:10px;
-    padding-bottom:5px;
+     text-align: center;
+     font-size: 20px;  
+     font-family: 'Shift', sans-serif;
+     padding-top:10px;
+     padding-bottom:5px;
       color: tomato;
       margin-left: 42em;
       position: absolute;
       top: 6.7em;
-      left: 497;
+      left: 467;
       width: 100%;
       margin: 0;
-  
-
   }
   

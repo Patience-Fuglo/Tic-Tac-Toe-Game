@@ -9,7 +9,7 @@ let scoreKeeper = {
     O: 0
 }
 
-
+//Audio
 //function to check if there is a tie
 function checkTie() {
     if (count == 9 && win == false) {
@@ -19,19 +19,6 @@ function checkTie() {
         reset();
     }
 }
-
-//funtion to play sound when there is no winner
-function checkTie() {
-    if (count == 9 && win == false) {
-        let audio = document.getElementById("failureAudio");
-        audio.play();
-        alert("Tie!");
-        reset();
-    }
-}
-
-
-
 
   //function to change the turn
 function changeTurn() {
@@ -55,17 +42,17 @@ function changeColor() {
       }
   }
 }
-//function to reset the game
+//function to reset button
 function reset() {
-  var cells = document.getElementsByTagName("td");
-  for (var i = 0; i < cells.length; i++) {
-      cells[i].innerHTML = "";
+    var cells = document.getElementsByTagName("td");
+    for (var i = 0; i < cells.length; i++) {
+        cells[i].innerHTML = "";
+    }
+    turn = "X";
+    win = false;
+    count = 0;
   }
-  turn = "X";
-  win = false;
-  count = 0;
-}
-
+  
 
 //function to check if the cell is empty
 function cellClicked(cell) {
@@ -77,8 +64,6 @@ function cellClicked(cell) {
         changeTurn();
     }
 }
-
-
 
 //function to change color of "X" and "O" players
 function changeColor() {
@@ -92,7 +77,7 @@ function changeColor() {
       }
   }
 }
-//Audio Added
+//Audio 
 //function to check status of the game
 function cellClicked(cell) {
     let audio = document.getElementById("defaultAudio");
@@ -181,15 +166,30 @@ function checkWinner() {
   }
 }
 
-//function to reset the game
+//function to reset the game board
 function reset() {
-  var cells = document.getElementsByTagName("td");
-  for (var i = 0; i < cells.length; i++) {
-      cells[i].innerHTML = "";
-      cells[i].style.backgroundColor = "white";
-  }
-  turn = "X";
-  win = false;
-}
+    let cells = document.getElementsByTagName("td");
+    for (let i = 0; i < cells.length; i++) {
+        cells[i].innerHTML = "";
+        cells[i].style.backgroundColor = "white";
+    }
+    count = 0;
+    win = false;
+    }
+
+
+//refresh page to reset button 
+    $("#reset").click(function(){ 
+     document.location.reload();
+     });
+
+
+
+     
+
+
+
+
+
 
 
