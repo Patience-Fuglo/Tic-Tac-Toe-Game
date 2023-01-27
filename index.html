@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
@@ -32,10 +30,13 @@
             </tr>
             <audio id="defaultAudio" onclick="playAudio()">
                 <source src="audio/goal2.mp3" type="audio/mpeg">
-            <audio id="failureAudio" onclick="playAudio()">
+            </audio>
+            <audio id="lossAudio" onclick="playAudio()">
                 <source src="audio/loss.mp3" type="audio/mpeg">
-                <audio id="winAudio" onclick="playAudio()">
-                  <source src="audio/startGame.mp3" type="audio/mpeg"> 
+            </audio>
+            <audio id="winAudio" onclick="playAudio()">
+                <source src="audio/startGame.mp3" type="audio/mpeg"> 
+            </audio>
         </table>
         <button onclick="reset()">Reset</button>
         <script src="script.js"></script>

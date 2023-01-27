@@ -13,7 +13,7 @@ let scoreKeeper = {
 //function to check if there is a tie
 function checkTie() {
     if (count == 9 && win == false) {
-        let audio = document.getElementById("failureAudio");
+        let audio = document.getElementById("lossAudio");
         audio.play();
         alert("Tie!");
         reset();
@@ -54,29 +54,6 @@ function reset() {
   }
   
 
-//function to check if the cell is empty
-function cellClicked(cell) {
-    if (cell.innerHTML == "") {
-        cell.innerHTML = turn;
-        count++;
-        checkWinner();
-        checkTie();
-        changeTurn();
-    }
-}
-
-//function to change color of "X" and "O" players
-function changeColor() {
-  var cells = document.getElementsByTagName("td");
-  for (var i = 0; i < cells.length; i++) {
-      if (cells[i].innerHTML == "X") {
-          cells[i].style.backgroundColor = "yellow";
-      } else if (cells[i].innerHTML == "O") {
-          cells[i].style.backgroundColor = "tomato";
-
-      }
-  }
-}
 //Audio 
 //function to check status of the game
 function cellClicked(cell) {
