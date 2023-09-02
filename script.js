@@ -128,10 +128,11 @@ function checkWinner() {
 
   }
   if (win) {
-    let audio = document.getElementById("winAudio");
+    let audio = document.getElementById("winAudio");    
     audio.play();
       alert("Player " + turn + " wins!");
       
+        
       // Update scorekeeper with the new win
       scoreKeeper[turn] = scoreKeeper[turn] + 1;
       //update UI
@@ -159,14 +160,3 @@ function reset() {
     $("#reset").click(function(){ 
      document.location.reload();
      });
-
-
-
-     
-
-
-
-
-
-
-
